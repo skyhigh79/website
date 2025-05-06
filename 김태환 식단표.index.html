@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>천재교과서 구내식당 식단표</title>
+
+    <style>
+
+        table {
+            width:90%;
+            border: 3px solid #000;
+            border-radius: 12px; 
+            border-collapse: separate; 
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-family: Arial, sans-serif;
+    
+        }
+    
+        th, td {
+            border: 1px solid #6b192b;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #b9c1e2;
+        }
+    
+        .휴일 {
+            background-color: #ffcccc;
+        }
+    
+    .메인메뉴 {
+        position: relative;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(255, 0, 0);
+        padding: 10px;
+        z-index: 1;
+    }
+    
+    .메인메뉴::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.4;
+        z-index: 0;
+        display: block;
+    }
+    
+    .메인메뉴[data-menu="깐풍기"]::before {
+        background-image: url("https://i.ibb.co/fVq6120f/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="고추찜닭"]::before {
+        background-image: url("https://i.ibb.co/bRKpRJZK/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="치킨치즈크로켓"]::before {
+        background-image: url("https://i.ibb.co/Vcfc0bKP/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="버섯우불고기"]::before {
+        background-image: url("https://i.ibb.co/Y4GR9cX3/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="오리두루치기"]::before {
+        background-image: url("https://i.ibb.co/jZWBrz25/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="갈비양념불고기"]::before {
+        background-image: url("https://i.ibb.co/wFn9vtLy/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="순살치킨청양매운맛소스"]::before {
+        background-image: url("https://i.ibb.co/mjpfnMZ/image.png");
+    }
+    
+        .근로자의날 {
+            background-image: url("https://i.ibb.co/Q304Zbxn/7de7973f5553583ca19bbe38041805af-res.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 80% center;
+            font: bold 4em 'Arial', sans-serif;
+            color: #395520;
+            vertical-align: top;
+    
+        }
+    
+    
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+    
+        .공지사항 {
+            font-size: 0.8em;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        /* desktop first */
+        @media (min-width: 1025px) {
+            table {
+                font-size: 1em;
+            }
+    
+            th, td {
+                padding: 10px;
+                font-size: 1.1em;
+            }
+        }
+        /* 태블릿 */
+        @media (max-width: 1024px) {
+            table {
+            font-size: 0.85em;
+            }
+    
+        th, td {
+            padding: 8px;
+            font-size: 0.85em;
+            }
+        }
+    
+        /* 모바일 */
+        @media (max-width: 768px) {
+            table {
+            font-size: 0.75em;
+            }
+    
+        th, td {
+            padding: 5px;
+            font-size: 0.75em;
+            }
+      }
+    
+        </style>
+</head>
+<body>
+  <table>
+        <caption>[AP타워] 다온푸드 구내식당 식단표(4/28 ~ 5/2)</caption>
+        <colgroup>
+
+            <col style="width: 15%;"> 
+            <col style="width: 15%;"> 
+            <col style="width: 15%;"> 
+            <col style="width: 15%;">
+            <col style="width: 25%;">
+            <col style="width: 15%;">
+        
+        </colgroup>
+
+    <thead>
+      <tr>
+          <th scope="col">2025년 </th>
+          <th scope="col">4월 28일<br>월요일</th>
+          <th scope="col">4월 29일<br>화요일</th>
+          <th scope="col">4월 30일<br>수요일</th>
+          <th scope="col">5월 1일<br>목요일</th>
+          <th scope="col">5월 2일<br>금요일</th>
+      </tr>
+      
+  </thead>
+  <tbody>
+      <tr>
+          <td>중식</td>
+          <td>
+              백미밥/잡곡밥<br>
+              소고기미역국<br>
+              묵은지돈찜<br>
+              <div class="메인메뉴" data-menu="깐풍기">깐풍기</div>
+              두부무이<br>
+              표고버섯볶음<br>
+              비빔면<br>
+              제철야채절임<br>
+              가든샐러드/드레싱<br>
+              포기김치
+          </td>
+          <td>
+              백미밥/잡곡밥<br>
+              유부어묵국<br>
+              <div class="메인메뉴" data-menu="고추찜닭">고추찜닭</div>
+              수제고구마/단호박튀김<br>
+              미나리전<br>
+              불닭떡볶이<br>
+              삼색계란찜<br>
+              제철야채절임<br>
+              가든샐러드/드레싱<br>
+              포기김치
+          </td>
+          <td>
+              백미밥/잡곡밥<br>
+              유부어묵국<br>
+              깻잎제육두루치기<br>
+              <div class="메인메뉴" data-menu="치킨치즈크로켓">치킨치즈크로켓</div>
+              감자조림<br>
+              한식잡채<br>
+              콩나물맛살냉채<br>
+              제철야채절임<br>
+              가든샐러드/드레싱<br>
+              포기김치
+          </td>
+          <td rowspan="3" class="근로자의날"> 근로자의 날
+          
+          </td>
+          
+
+          <td>
+              콩나물버섯영양밥/잡곡밥<br>
+              명동칼국수<br>
+              <div class="메인메뉴" data-menu="버섯우불고기">버섯우불고기</div>
+              피쉬커틀렛<br>
+              오징어콩나물찜<br>
+              견과류멸치볶음<br>
+              김치전<br>
+              제철야채절임<br>
+              가든샐러드/드레싱<br>
+              포기김치
+          </td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>셀프비빔밥<br>&후식</td>
+          <td>셀프비빔밥<br>&후식</td>
+          <td>셀프비빔밥<br>&후식</td>
+      
+          <td>셀프비빔밥<br>&후식</td>
+      </tr>
+     
+      <tr>
+          <td>석식</td>
+          <td>
+              백미밥/잡곡밥<br>
+              고추장찌개<br>
+              후르츠탕수육<br>
+              <div class="메인메뉴" data-menu="오리두루치기">오리두루치기</div>
+              순두부찜<br>
+              청포묵김가루무침<br>
+              춘천막국수<br>
+              생채소절임<br>
+              포기김치<br>
+              가든샐러드
+          </td>
+          <td>
+              백미밥/잡곡밥<br>
+              얼큰우거지된장국<br>
+              <div class="메인메뉴" data-menu="갈비양념불고기">갈비양념불고기</div>
+              일식가지조림<br>
+              메추리알새송이버섯조림<br>
+              골빔면<br>
+              생채소절임<br>
+              포기김치<br>
+              가든샐러드
+          </td>
+          <td>
+              백미밥/잡곡밥<br>
+              북어해장국<br>
+              <div class="메인메뉴" data-menu="순살치킨청양매운맛소스">순살치킨<br>청양매운맛소스</div>
+              고추잡채&꽃빵<br>
+              고구마치즈그라탕<br>
+              어묵볶음<br>
+              숙주나물<br>
+              생채소절임<br>
+              포기김치<br>
+              가든샐러드
+          </td>
+          
+          <td class="휴일">미운영</td>
+      </tr>
+  </tbody>
+</table>
+
+<p class="공지사항">♥ 메뉴는 식재료와 상황에 따라 변경될 수 있습니다.</p>
+
+</body>
+</html>
